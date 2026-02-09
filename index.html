@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos Juntos - Red Social</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js" defer></script>
+
+    <header>
+        <h1 class="logo-3d">TODOS JUNTOS</h1>
+    </header>
+
+    <main class="container">
+        <p>Bienvenido a la comunidad.</p>
+    </main>
+
+</body>
+</html>
+
+<header>
+    <div class="nav-container">
+        <h1 class="logo-3d">TODOS JUNTOS</h1>
+        <nav class="menu">
+            <a href="#" class="nav-link">Inicio</a>
+            <a href="#" class="nav-link">Perfil</a>
+            <a href="#" class="nav-link">Notificaciones</a>
+            <a href="#" class="nav-link">Ajustes</a>
+        </nav>
+    </div>
+</header>
+
+<section class="publish-box">
+    <div class="user-avatar-mini"></div>
+    <div class="input-area">
+        <textarea id="post-input" placeholder="¿Qué estás pensando, Todos Juntos?"></textarea>
+        <div class="publish-actions">
+            <button class="btn-secondary">📸 Foto/Video</button>
+            <button class="btn-primary" id="btn-publicar">Publicar</button>
+        </div>
+    </div>
+</section>
+
+<section id="feed-container">
+    <article class="post-card">
+        <div class="post-header">
+            <div class="user-avatar-mini"></div>
+            <div class="post-info">
+                <span class="user-name">Juan Pérez</span>
+                <span class="post-time">Hace 5 minutos</span>
+            </div>
+        </div>
+        
+        <div class="post-body">
+            <p>¡Hola a todos! Estoy emocionado de unirme a <strong>Todos Juntos</strong>. Esta red social se ve increíble. 🚀</p>
+        </div>
+
+        <div class="post-footer">
+            <button class="btn-action">⭐ <span class="count">12</span></button>
+            <button class="btn-action">💬 <span class="count">4</span></button>
+            <button class="btn-action">Compartir</button>
+        </div>
+    </article>
+</section>
+
+<main class="main-layout">
+    <div class="feed-column">
+        </div>
+
+    <aside class="sidebar">
+        <div class="sidebar-card">
+            <h3>Sugerencias para ti</h3>
+            <div class="suggestion-item">
+                <div class="user-avatar-mini"></div>
+                <div class="user-info">
+                    <p>Ana López</p>
+                    <button class="btn-follow">Conectar</button>
+                </div>
+            </div>
+            <div class="suggestion-item">
+                <div class="user-avatar-mini"></div>
+                <div class="user-info">
+                    <p>Carlos Ruiz</p>
+                    <button class="btn-follow">Conectar</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+</main>
+
+<nav class="menu">
+    <a href="#" class="nav-link">Inicio</a>
+    <div class="notification-container">
+        <span class="nav-link">🔔</span>
+        <span id="notif-badge" class="badge">3</span>
+        
+        <div class="notif-dropdown" id="notif-dropdown">
+            <div class="notif-item">A Juan Pérez le gustó tu post.</div>
+            <div class="notif-item">Ana López te envió una solicitud.</div>
+            <div class="notif-item">Nuevo comentario en tu foto.</div>
+        </div>
+    </div>
+    <button id="dark-mode-toggle" class="btn-mode">🌙</button>
+</nav>
+
+<section class="profile-container">
+    <div class="profile-cover">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80" alt="Portada">
+    </div>
+    
+    <div class="profile-header">
+        <div class="profile-avatar-wrapper">
+            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop" alt="Foto de Perfil" class="profile-avatar">
+        </div>
+        <div class="profile-info">
+            <h2 class="profile-name">Tu Nombre Profesional</h2>
+            <p class="profile-bio">Entusiasta de la tecnología y creador de <strong>Todos Juntos</strong>. 🚀</p>
+        </div>
+        <div class="profile-actions">
+            <button class="btn-primary">Editar Perfil</button>
+        </div>
+    </div>
+</section>
+
+<button id="theme-switch" class="btn-mode">
+    <span id="theme-icon">🌙</span> </button>
+
+    <div class="chat-wrapper">
+    <button id="chat-toggle" class="chat-bubble">
+        💬 <span class="online-dot"></span>
+    </button>
+
+    <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+            <div class="user-info">
+                <div class="user-avatar-mini" style="width:30px; height:30px;"></div>
+                <span>Chat General</span>
+            </div>
+            <button id="close-chat">×</button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="msg incoming">¡Hola! Bienvenido al chat de Todos Juntos.</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="msg-input" placeholder="Escribe un mensaje...">
+            <button id="send-msg">➤</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="chat-input-area">
+    <div class="emoji-bar" id="emoji-bar">
+        <span>😀</span><span>😂</span><span>❤️</span><span>🔥</span><span>🚀</span>
+    </div>
+    <div class="input-row">
+        <input type="text" id="msg-input" placeholder="Escribe algo...">
+        <button id="send-msg">➤</button>
+    </div>
+</div>
+
